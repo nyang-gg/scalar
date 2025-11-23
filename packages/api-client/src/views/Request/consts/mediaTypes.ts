@@ -109,7 +109,7 @@ export const mediaTypes: { [type: string]: MediaConfig | undefined } = {
   },
   'text/javascript': { extension: '.js', raw: true },
   'text/plain': { extension: '.txt', raw: true },
-  'text/devalue': { extension: '.devalue.txt', raw: true },
+  'text/devalue': { extension: '.devalue.txt', raw: true, language: 'json' },
   'text/xml': { extension: '.xml', raw: true, language: 'xml' },
   'text/yaml': { extension: '.yaml', raw: true, language: 'yaml' },
   'video/3gpp': { extension: '.3gp' },
