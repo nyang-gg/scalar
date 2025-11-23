@@ -26,3 +26,11 @@ rollup.config-*.mjs
 .astro
 
 .pnpm-store/
+
+# packages/api-reference 경로에서 단일 파일만 추적하려면,
+# 무시 → 디렉터리 허용 → 다시 무시 → 파일 하나만 예외 순서가 필요합니다.
+!packages/api-reference/dist/
+packages/api-reference/dist/*
+!packages/api-reference/dist/browser/
+packages/api-reference/dist/browser/*
+!packages/api-reference/dist/browser/standalone.js
